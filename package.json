@@ -4,25 +4,29 @@
     "description": "beautiful landing pages",
     "main": "index.js",
     "scripts": {
-      "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
-      "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i tailwind.css -o tailwind-build.css --minify",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start:tailwind": "npx cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
+        "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i tailwind.css -o tailwind-build.css --minify",
+        "serve": "http-server -p 4321",
+        "dev": "npm run start:tailwind & npm run serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
-      "landing",
-      "pages",
-      "motion",
-      "design",
-      "websites"
+        "landing",
+        "pages",
+        "motion",
+        "design",
+        "websites"
     ],
     "author": "Paul",
     "license": "MIT",
     "devDependencies": {
-      "tailwindcss": "^3.4.1"
+        "autoprefixer": "^10.4.20",
+        "cross-env": "^7.0.3",
+        "http-server": "^14.1.1",
+        "tailwindcss": "^3.4.1"
     },
     "dependencies": {
-      "postcss": "^8.4.33",
-      "postcss-simple-vars": "^7.0.1"
+        "postcss": "^8.4.33",
+        "postcss-simple-vars": "^7.0.1"
     }
-  }
-  
+}
