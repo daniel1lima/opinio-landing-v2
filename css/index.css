@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
 
-    --bg-color: #000;
+    --bg-color: #fff;
 
     --btn-color: #fdfdfd;/* button color*/
     --btn-bg: #0A8DD3;/* button bg color*/
@@ -15,7 +16,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 header{
@@ -51,7 +52,7 @@ header > .collapsible-header{
 
 
 .header-links:hover {
-    color: #ffffff;
+    color: #006aff;
     /* background-color: var(--header-link-hover); */
 }
 
@@ -61,7 +62,7 @@ header > .collapsible-header{
 
 .gradient-text{
     background: rgb(215,215,215);
-    background: linear-gradient(90deg, rgba(215,215,215,1) 18%, rgba(136,136,136,1) 71%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -233,4 +234,8 @@ header > .collapsible-header{
         color: rgb(255, 255, 255);
     }
     
+}
+
+.blue-text {
+    color: blue;
 }
